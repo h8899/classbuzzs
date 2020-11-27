@@ -1,0 +1,64 @@
+{
+    "app": {
+        "groupId": "18814e8e-e875-4783-848f-a3ab84e41a86"
+    },
+    "auth": {
+        "realToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbF9hZGRyZXNzIjoiYUBhLmNvbSIsInVzZXJuYW1lIjoiYUBhLmNvbSIsInVzZXJfaWQiOiIyZjljNDgzMS02NjFiLTQ4OWItYTE4OS1iNzBkNzBmM2E2NmYiLCJleHAiOjE1NDAwNzY1OTV9.BT0wn1BCU4L_KJ0dZsgBNC2UGnSW60qRAGmSB9AwW70",
+        "realUser": "2f9c4831-661b-489b-a189-b70d70f3a66f",
+        "effectiveToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJlbWFpbF9hZGRyZXNzIjoiYUBhLmNvbSIsInVzZXJuYW1lIjoiYUBhLmNvbSIsInVzZXJfaWQiOiIyZjljNDgzMS02NjFiLTQ4OWItYTE4OS1iNzBkNzBmM2E2NmYiLCJleHAiOjE1NDAwNzY1OTV9.BT0wn1BCU4L_KJ0dZsgBNC2UGnSW60qRAGmSB9AwW70",
+        "effectiveUser": "2f9c4831-661b-489b-a189-b70d70f3a66f",
+        "_lastValidation": 1540052769136
+    },
+    "group": {
+        "18814e8e-e875-4783-848f-a3ab84e41a86": {
+            "id": "18814e8e-e875-4783-848f-a3ab84e41a86",
+            "name": "CS3216",
+            "description": "This is a good class!",
+            "posts": ["f11665b6-f039-4ed6-816c-4cb98e80ae2e"],
+            "owner": "2f9c4831-661b-489b-a189-b70d70f3a66f",
+            "members": ["2f9c4831-661b-489b-a189-b70d70f3a66f"],
+            "createdAt": 1540052769136,
+            "_lastUpdated": 1540052769136
+        }
+    },
+    "post": {
+        "f11665b6-f039-4ed6-816c-4cb98e80ae2e": {
+            "id": "f11665b6-f039-4ed6-816c-4cb98e80ae2e",
+            "groupId": "18814e8e-e875-4783-848f-a3ab84e41a86",
+            "author": "2f9c4831-661b-489b-a189-b70d70f3a66f",
+            "body": "Check out this video!",
+            "media": "youtube",
+            "payload": "tFa0uVNmIYg",
+            "likes": ["2f9c4831-661b-489b-a189-b70d70f3a66f"],
+            "comments": ["ae2f46e6-d735-47f4-8101-7e2d4e615d5d"],
+            "createdAt": 1540052769136,
+            "_lastUpdated": 1540052769136
+        }
+    },
+    "comments": {
+        "ae2f46e6-d735-47f4-8101-7e2d4e615d5d": {
+            "id": "ae2f46e6-d735-47f4-8101-7e2d4e615d5d",
+            "postId": "f11665b6-f039-4ed6-816c-4cb98e80ae2e",
+            "author": "2f9c4831-661b-489b-a189-b70d70f3a66f",
+            "body": "This is a comment!",
+            "likes": ["2f9c4831-661b-489b-a189-b70d70f3a66f"],
+            "createdAt": 1540052769136,
+            "_lastUpdated": 1540052769136
+        }
+    },
+    "users": {
+        "2f9c4831-661b-489b-a189-b70d70f3a66f": {
+            "id": "2f9c4831-661b-489b-a189-b70d70f3a66f",
+            "username": "Display Name",
+            "realname": "John Doe",
+            "email": "email@email.com",
+            "description": "Description",
+            "isActive": true,
+            "isSuperuser": true,
+            "_lastUpdated": 1540052769136
+        }
+    },
+    "loading": {
+        
+    }
+}

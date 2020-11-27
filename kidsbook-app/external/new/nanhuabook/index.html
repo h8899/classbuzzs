@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/jwt-decode@2.2.0/build/jwt-decode.min.js"></script>
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 16px;
+            }
+            html,
+            body {
+                margin: 0;
+                padding: 0;
+            }
+            input {
+                font-size: 1rem;
+                padding: 0.5rem 0.6rem;
+            }
+            button {
+                background-color: #ba45c4;
+                border: 0;
+                color: white;
+                padding: 1rem 2rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                transition: all 0.2s;
+            }
+            button:hover {
+                background-color: #75277c;
+            }
+            button:disabled,
+            button[disabled] {
+                background-color: #aaaaaa;
+                cursor: auto;
+            }
+            .input-group {
+                display: flex;
+                align-items: center;
+                margin: 0.5rem 0;
+            }
+            .input-label {
+                margin-right: 0.8rem;
+                flex: 0 0 auto;
+            }
+            .input-field {
+                flex: 1 1;
+            }
+            .input-submit {
+                text-align: center;
+                margin-top: 1rem;
+            }
+        </style>
+    </head>
+    <body style="background-color: #d0d0d8; padding: 20px; margin: 0;">
+        <div style="background-color: white; padding: 10px; max-width: 800px; margin: 0 auto; box-shadow: 0 0 50px rgba(0, 0, 0, 0.2)">
+            <div style="padding: 1.2rem;">
+                <div style="background-image: url(./photo.jpg); padding-bottom: 50%; background-size: cover; background-position: center;"></div>
+            </div>
+            <h1
+                style="text-transform: uppercase; color: #c76cd0; text-align: center; font-size: 40px; margin-bottom: 0; line-height: 1;"
+            >
+                School bookshop deals
+            </h1>
+            <h3 style="text-transform: uppercase; color: #c76cd0; text-align: center; margin: 1.5rem 0;">
+                Save money and shop more!
+            </h3>
+
+            <div style="padding: 1.5rem;">
+                <div>
+                    <p>To all students,</p>
+                    <p>Enter your details below to get a free $5 Book Voucher. One entry per student only.</p>
+                    <p>Approach your bookshop from 15 April 2019 (Monday) onwards, to claim your book voucher.</p>
+                    <p>Hurry whilst stocks last!</p>
+                </div>
+
+                <div style="padding: 2rem 1rem 3rem;">
+                    <div class="input-group">
+                        <div class="input-label">Full Name:</div>
+                        <input id="input-1" class="input-field" type="text" />
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">School:</div>
+                        <input id="input-2" class="input-field" type="text" />
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">Contact number:</div>
+                        <input id="input-3" class="input-field" type="text" />
+                    </div>
+                    <div class="input-group">
+                        <div class="input-label">Home address:</div>
+                        <input id="input-4" class="input-field" type="text" />
+                    </div>
+                    <div class="input-submit"><button id="submit-btn" onClick="submitForm()">Submit</button></div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var isSubmitted = false;
+
+            function getInfo() {
+                var token = localStorage.getItem('test_effectiveToken');
+                var userId = null;
+                var surveyId = null;
+
+                try {
+                    var query = window.location.search.substring(1);
+                    var params = new URLSearchParams(query);
+                    surveyId = params.get('id');
+                    token = JSON.parse(token);
+                    userId = jwt_decode(token).user_id;
+                } catch (e) {
+                    // Ignore
+                }
+
+                return {
+                    surveyId: surveyId,
+                    userId: userId,
+                    token: token
+                };
+            }
+
+            function submitForm() {
+                var elSubmitBtn = document.getElementById('submit-btn');
+                elSubmitBtn.disabled = 'disabled';
+                elSubmitBtn.innerHTML = 'Please wait';
+
+                var info = getInfo();
+                var url = 'https://api.classbuzz.ml/api/v1/survey/' + info.surveyId + '/user/' + info.userId + '/';
+
+                var data = new FormData();
+                for (var i = 1; i <= 4; i++) {
+                    data.append('answers', document.getElementById('input-' + i).value);
+                }
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', url, true);
+                xhr.setRequestHeader('Authorization', 'Bearer ' + info.token);
+                xhr.onreadystatechange = function() {
+                    if (this.readyState === 4) {
+                        if (this.status >= 200 && this.status < 400) {
+                            for (var i = 1; i <= 4; i++) {
+                                document.getElementById('input-' + i).disabled = 'disabled';
+                            }
+                            elSubmitBtn.innerHTML = 'Submitted successfully';
+                        } else {
+                            elSubmitBtn.disabled = null;
+                            elSubmitBtn.innerHTML = 'Submit';
+                            alert('Please fill in all the required fields');
+                        }
+                    }
+                };
+                xhr.send(data);
+            }
+        </script>
+    </body>
+</html>

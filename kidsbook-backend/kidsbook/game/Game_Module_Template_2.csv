@@ -1,0 +1,175 @@
+﻿# Empty rows and rows that begin with a # will be ignored,,,,
+# Follow the instructions to create this document,,,,
+# Room Title,# To be filled in when creating game via UI,,,
+# Intro,# To be filled in when creating game via UI,,,
+,,,,
+#KEYWORD,SCENE NUMBER,,,
+Scene ,1,,,
+#KEYWORD,NAME,SPEECH,TAG,PATHWAY
+character,Curt,"Hi guys, so we were supposed to discuss this.. Let’s get this moving",,
+character,Paulina,"If only we got to choose our own groups, now we’re stuck with Kenzo the dumb-a**",,
+character,Curt,Yeah we can get the dumb one to present the project for us,,
+character,Paulina,"Ha, ok but before that we gotta get some content out",,
+choice,<player>,Shall we ask Kenzo if he’s comfortable to present first?,Upstanding,2
+choice,<player>,Can we get down to the task and decide on presenting later?,Ignoring,2
+choice,<player>,"Yeah fa**** Kenzo, where are you... You hear that you gotta present yeah?",Hurtful Comment,2
+,,,,
+Scene ,2,,,
+character,Kenzo,Ok I will present,,
+character,Paulina,"DUH, you don’t have a choice",,
+character,Kenzo,Ok let’s start. We are supposed to discuss our stand on whether shoppers should pay for plastic bags when they go to supermarkets,,
+character,Paulina,"Ha, yes smarty pants, so what do YOU think?",,
+character,Curt,"Haha, come on give him a break, before he starts wailing to his mother",,
+choice,<player>,"Ok get back to the question guys. I think I’m cool with charging people for plastic bags, let’s save the earth man, what do you guys think?",Ignoring,3
+choice,<player>,Only Kenzo should pay for plastic bags,Hurtful Comment,4
+choice,<player>,"Ok guys... It won’t hurt for all of us to be kinder with our words, shall we not get personal with Kenzo?",Upstanding,5
+,,,,
+Scene ,3,,,
+character,Curt,"Yeah, a lot of countries enforce this payment rule and I think it works to get people to bring their own bags",,
+character,Kenzo,Yeah I agree,,
+character,Paulina,"Come on, tell us something new Kenzo ha, stop ***ing around",,
+character,Curt,"Haha leave him alone, come on, he’s gonna start complaining to our teacher soon",,
+character,Paulina,"Yeah, what a wimp",,
+character,Curt,"SO, in my humble opinion, I am supportive of the payment rule for plastic bags, I think if such things are not enforced, people will not see a need to change the way they are living.",,
+character,Kenzo,"Yup, I agree and we can hope that it becomes a habit that grows on everyone…",,
+character,Paulina,"Duh, I don’t need you to tell me you agree with everything kenzoboy. Tell me something I don’t know.",,
+choice,<player>,"Kenzo is just gonna agree with everything we say, forget it Paulina!",Hurtful Comment,6
+choice,<player>,"Paulina, if you’re not gonna stop with the name-calling, I will let Ms Tan know that you aren’t helping the discussion at all.",Upstanding,7
+choice,<player>,"Well, I think enforcing payment has its pros and cons – I’m not sure how well the supermarket enterprises will take this?",Ignoring,8
+,,,,
+Scene ,4,,,
+character,Curt,"HA, maybe he can’t even afford one",,
+character,Paulina,Whut. That’s just lame.,,
+character,Kenzo,Please…. Can we get back to our discussion?,,
+character,Paulina,Oh look who’s coming out of his hole now…….,,
+character,Curt,"Kenzo the wimp! Ha. Anyway I guess… I am supportive of the payment rule for plastic bags, I think if such things are not enforced, people will not see a need to change the way they are living.",,
+character,Kenzo,"Yup, I agree and we can hope that it becomes a habit that grows on everyone…",,
+character,Paulina,"Duh, I don’t need you to tell me you agree with everything kenzoboy. Tell me something I don’t know.",,
+choice,<player>,Ok we don’t have much time left. Let’s get back to discussing the question first.,Ignoring,9
+choice,<player>,"Ok guys, let’s not go overboard with our words to Kenzo…",Upstanding,10
+choice,<player>,"Yeah, that’s Kenzo trying to be heard…",Hurtful Comment,11
+,,,,
+Scene,5,,,
+character,Curt,"Allllllright, will try. Come on, so what’s our take on plastic bags? We gotta have a group stand.",,
+character,Paulina,"I don’t know... I guess my take is that, there’s no harm in making people pay so this will discourage them from using plastic bags unnecessarily",,
+character,Kenzo,"Yup, so only those who really need the bag will pay for it... I think that will help to save the environment in the near future",,
+character,Paulina,Yes smartie pants ,,
+character,Curt,It may help to keep the cost of the plastic bags to 10 cents maybe? What does smartie pants think?,,
+choice,<player>,"Ok guys, shush. Kenzo is just helping by sharing with us his opinions.",Upstanding,12
+choice,<player>,"Ok let’s move on, so we are good with this stand?",Ignoring,13
+choice,<player>,SMARTIE PANTS INDEED. Tell us more.,Hurtful Comment,14
+,,,,
+Scene ,6,,,
+character,Paulina,Ha that is true.,,
+character,Curt,Okay time check! We have about 5 more minutes left to discuss this. KENZO do you know what you’re supposed to present yet?!,,
+character,Kenzo,"Not really, I don’t think we have got much content out yet as a team.",,
+character,Paulina,"Oh gosh. Please don’t make us fail the assignment. So, Kenzo smartie pants, summarise what we’ve talked about so far and we will see what’s missing.",,
+character,Kenzo,"Urgh stop calling me smartie pants, will you.",,
+character,Paulina,"OH LOOK, THE WIMP IS SPEAKING UP……",,
+character,Curt,"Hahahaha what do you think Kenzo? Before you start crying, give us an answer first.",,
+character,Kenzo,So most of us agree that we should allow payment for plastic bags in supermarkets to help to save the environment.,,
+character,Paulina,"Justify it dude, is that all?!",,
+choice,<player>,Yeah you need to JUSTIFY the statement Kenzo. It’s not your first time doing a presentation. Time is running out.,Hurtful Comment,END
+choice,<player>,"Ok Paulina, chill. Be mindful of how you’re talking here!",Upstanding,END
+choice,<player>,Ok I remember we mentioned that it may require some ‘enforced rule’ before people would follow. You can include this reason as a justification Kenzo.,Ignoring,END
+,,,,
+Scene ,7,,,
+character,Paulina,"Ok fine I will stop. I was just kidding, come on",,
+character,Curt,So we’ve got an argument up for the question yeah? I think we should present two sides to it and decide as a team what our stand is and why we decided it as such.,,
+character,Kenzo,"Yeah, Curt spoke about the reasons to support paying for plastics because when enforced, people will follow and hopefully this slowly changes their way of living, at least where plastic bags are concerned ",,
+character,Paulina,"You finally got something out, Kenzo. So what about the opposite side, kid? Why do we not support paying for plastic bags??",,
+choice,<player>,"What do you suggest, Paulina? We could communicate better if you could keep your tone in check as well.",Upstanding,END
+choice,<player>,"Yeah Kenzo, what’s your take? Since you managed to summarise what Curt said so well, huh.",Hurtful Comment,END
+choice,<player>,Ok my take is that perhaps we shouldn’t enforce it because people these days don’t take to enforcements very well. We could start by educating people more on the negative impact of using plastic bags and get them to understand the impact? ,Ignoring,END
+,,,,
+Scene ,8,,,
+character,Kenzo,"Yeah, even if they don’t take it well, if it’s a law, they just got to follow it…",,
+character,Curt,Hah I didn’t need you to tell me that Kenzo. SO time check! We have about 5 more minutes left to discuss this. KENZO do you know what you’re supposed to present yet?!,,
+character,Kenzo,"Not really, I don’t think we have got much content out yet as a team.",,
+character,Paulina,"Oh gosh. Please don’t make us fail the assignment. So, Kenzo smartie pants, summarise what we’ve talked about so far and we will see what’s missing.",,
+character,Kenzo,Most of us agree that we should allow payment for plastic bags in supermarkets to help to save the environment ,,
+character,Paulina,"Justify it dude, is that all?!",,
+choice,<player>,Yeah you need to JUSTIFY the statement Kenzo. It’s not your first time doing a presentation. Time is running out.,Hurtful Comment,END
+choice,<player>,"Ok Paulina, chill. Be mindful of how you’re talking here!",Upstanding,END
+choice,<player>,Ok I remember we mentioned that it may require some ‘enforced rule’ before people would follow. You can include this reason as a justification Kenzo.,Ignoring,END
+,,,,
+Scene ,9,,,
+character,Curt,"Ha alright, let’s do a time check. We have about 5 more minutes left to discuss this. KENZO do you know what you’re supposed to present yet?!",,
+character,Kenzo,"Not really, I don’t think we have got much content out yet as a team.",,
+character,Paulina,"Oh gosh. Please don’t make us fail the assignment. So, Kenzo smartie pants, summarize what we’ve talked about so far and we will see what’s missing.",,
+character,Kenzo,"Urgh stop calling me smartie pants, will you.",,
+character,Paulina,"OH LOOK, THE WIMP IS SPEAKING UP……",,
+character,Curt,"Hahahaha what do you think Kenzo? Before you start crying, give us an answer first.",,
+character,Kenzo,Most of us agree that we should allow payment for plastic bags in supermarkets to help to save the environment ,,
+character,Paulina,"Justify it dude, is that all?!",,
+choice,<player>,Yeah you need to JUSTIFY the statement Kenzo. It’s not your first time doing a presentation. Time is running out.,Hurtful Comment,END
+choice,<player>,"Ok Paulina, chill. Be mindful of how you’re talking here!",Upstanding,END
+choice,<player>,Ok I remember we mentioned that it may require some ‘enforced rule’ before people would follow. You can include this reason as a justification Kenzo.,Ignoring,END
+,,,,
+Scene ,10,,,
+character,Paulina,"Ok fine I will stop. I was just kidding, come on.",,
+character,Curt,So we’ve got an argument up for the question yeah? I think we should present two sides to it and decide as a team what our stand is and why we decided it as such.,,
+character,Kenzo,"Yeah, Curt spoke about the reasons to support paying for plastics because when enforced, people will follow and hopefully this slowly changes their way of living, at least where plastic bags are concerned.",,
+character,Paulina,"Yes like you mentioned, that’s what I said, not you. So what about the opposite side, kid? Why do we not support paying for plastic bags??",,
+choice,<player>,What do you suggest Paulina? We could communicate better if you could keep your tone in check as well…,Upstanding,END
+choice,<player>,"Yeah kid, what’s your take? Since you managed to summarise what curt said so well.",Hurtful Comment,END
+choice,<player>,Ok my take is that perhaps we shouldn’t enforce it because people these days don’t take to enforcements very well. We could start by educating people more on the negative impact of using plastic bags and get them to understand the impact?,Ignoring,END
+,,,,
+Scene ,11,,,
+character,Curt,"You heard something, <player>? Cause I heard…. Nothing! *Gasp*",,
+character,Kenzo,"Not really, I don’t think we have got much content out yet as a team.",,
+character,Paulina,"Oh gosh. Please don’t make us fail the assignment. So, Kenzo smartie pants, summarise what we’ve talked about so far and we will see what’s missing.",,
+character,Kenzo,Most of us agree that we should allow payment for plastic bags in supermarkets to help to save the environment.,,
+character,Paulina,"Justify it dude, is that all?!",,
+choice,<player>,Yeah you need to JUSTIFY the statement Kenzo. It’s not your first time doing a presentation. Time is running out.,Hurtful Comment,END
+choice,<player>,"Ok Paulina, chill. Be mindful of how you’re talking here!",Upstanding,END
+choice,<player>,Ok I remember we mentioned that it may require some ‘enforced rule’ before people would follow. You can include this reason as a justification Kenzo.,Ignoring,END
+,,,,
+Scene ,12,,,
+character,Paulina,"Ok fine I will stop. I was just kidding, come on.",,
+character,Curt,So we’ve got an argument up for the question yeah? I think we should present two sides to it and decide as a team what our stand is and why we decided it as such.,,
+character,Kenzo,"Yeah, Paulina spoke about paying for plastics so that it discourages people from using the bags unnecessarily.",,
+character,Paulina,"Yes like you mentioned, that’s what I said, not you. So what about the opposite side, kid? Why do we not support paying for plastic bags??",,
+character,Kenzo,I’m not a kid….,,
+character,Curt,"Ok you’re not a kid, old man.",,
+character,Paulina,Haha what a fa****.,,
+choice,<player>,"Paulina, we could communicate better if you could keep your tone in check..",Upstanding,END
+choice,<player>,"Yeah kid, what’s your take? Don’t think you can get away by just repeating what Paulina said.",Hurtful Comment,END
+choice,<player>,Ok my take is that perhaps we shouldn’t enforce it because people these days don’t take to enforcements very well. We could start by educating people more on the negative impact of using plastic bags and get them to understand the impact?,Ignoring,END
+,,,,
+Scene ,13,,,
+character,Curt,Alright I doubt smartie pants has anything good to say. Let’s do a time check. We have about 5 more minutes left to discuss this. KENZO do you know what you’re supposed to present yet?!,,
+character,Kenzo,"Not really, I don’t think we have got much content out yet as a team.",,
+character,Paulina,"Oh gosh. Please don’t make us fail the assignment. So, Kenzo smartie pants, summarise what we’ve talked about so far and we will see what’s missing.",,
+character,Kenzo,Most of us agree that we should allow payment for plastic bags in supermarkets and to cap it at 10 cents per plastic bag.,,
+character,Paulina,"Justify it dude, is that all?!",,
+choice,<player>,Yeah you need to JUSTIFY the statement Kenzo. It’s not your first time doing a presentation. Time is running out.,Hurtful Comment,END
+choice,<player>,"Ok Paulina, chill. Be mindful of how you’re talking here!",Upstanding,END
+choice,<player>,Ok I remember we mentioned that it may require some ‘enforced rule’ before people would follow. You can include this reason as a justification Kenzo.,Ignoring,END
+,,,,
+Scene ,14,,,
+character,Paulina,Ha that is true.,,
+character,Curt,Okay time check! We have about 5 more minutes left to discuss this. KENZO do you know what you’re supposed to present yet?!,,
+character,Kenzo,"Not really, I don’t think we have got much content out yet as a team.",,
+character,Paulina,"Oh gosh. Please don’t make us fail the assignment. So, Kenzo smartie pants, summarise what we’ve talked about so far and we will see what’s missing.",,
+character,Kenzo,Most of us agree that we should allow payment for plastic bags in supermarkets and to cap it at 10cents per plastic bag.,,
+character,Paulina,"Justify it dude, is that all?!",,
+choice,<player>,Yeah JUSTIFY the statement Kenzo. It’s not your first time doing a presentation. We’re waiting.,Hurtful Comment,END
+choice,<player>,"Ok Paulina, chill. Be mindful of how you’re talking here! ",Upstanding,END
+choice,<player>,Ok I remember we mentioned that this can perhaps discourage unnecessary use of the plastic bags. You can include this reason as a justification Kenzo.,Ignoring,END
+,,,,
+END,,,,
+Display text,,"The conversation continues and Kenzo manages to present the answers to the class, for the team. Kenzo ultimately finds a friend in <player>, while his peers grow to accept him for who he is, with <player>’s influence….
+
+Well done, <player>! Keep up the good work of standing up for what is right!",Upstanding,
+Display text,,"The conversation continues and Kenzo manages to present the answers to the class, for the team. Kenzo, as hurt as he may be feeling from the name-calling, continues to pretend that all is fine… 
+
+Is this how you would want to leave someone feeling? If not, it’s time to stand up for what’s right, and not ignore, <player>.",Ignoring,
+Display text,,"The conversation continues and time eventually runs out. The group fails to come up with anything to present to the class. The cyber bullying continues frequently and Kenzo struggles to deal with his hurts….
+
+Be mindful of the impact cyber bullying can have on victims. Imagine it happening to a loved one. Instead of perpetuating these acts of bullying online, take a step back, think about the emotional and psychological impact this can bring to individuals. 
+Is this how you would want to leave someone feeling? If not, it’s time to stand up for what’s right, and not contribute to any form of bullying online, <player>.",Hurtful Comment,
+Display text,,"The conversation continues and time eventually runs out. The group fails to come up with anything to present to the class. The bullying continues to surface from time to time and Kenzo continues to pretend that all is fine... 
+
+Be mindful of the impact cyber bullying can have on victims. Imagine it happening to a loved one. Instead of perpetuating these acts of bullying online, take a step back, think about the emotional and psychological impact this can bring to individuals. 
+Is this how you would want to leave someone feeling? If not, it’s time to stand up for what’s right, and not contribute to any form of bullying online, <player>.",<equal>,

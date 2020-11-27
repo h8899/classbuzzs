@@ -1,0 +1,67 @@
+﻿# Empty rows and rows that begin with a # will be ignored,,,,
+# Follow the instructions to create this document,,,,
+# Room Title,# To be filled in when creating game via UI,,,
+# Intro,# To be filled in when creating game via UI,,,
+,,,,
+#KEYWORD,SCENE NUMBER,,,
+Scene ,1,,,
+#KEYWORD,NAME,SPEECH,TAG,PATHWAY
+character,Curt,"Hi guys, so we were supposed to discuss this.. Let’s get this moving",,
+character,Carlos,Yesss,,
+character,Paulina,"If only we got to choose our own groups, now we’re stuck with Kenzo the dumb-ass",,
+character,Curt,Yeah we can get the dumb one to present for us,,
+character,Paulina,"Ha, ok but before that we gotta get some content out",,
+choice,<player>,Shall we ask Kenzo if he’s comfortable to present first?,Upstanding,2
+choice,<player>,Can we get down to the task and decide on presenting later?,Ignoring,2
+choice,<player>,"Yeah faggot Kenzo, where are you.. You hear that you gotta present yeah?",Bullying,2
+,,,,
+Scene ,2,,,
+character,Kenzo,Ok I will present,,
+character,Paulina,"DUH, you don’t have a choice",,
+character,Kenzo,Ok let’s start. We are supposed to discuss our stand on whether people should pay for plastic bags when they go to the supermarket,,
+character,Paulina,"Ha, yes smarty pants, so what do YOU think?",,
+character,Curt,"Haha, come on give him a break, before he starts wailing to his mother ",,
+choice,<player>,"Ok get back to the question guys. I think I’m cool with charging people for plastic bags, let’s save the earth man, what do you guys think?",Ignoring,3
+choice,<player>,Only retards like Kenzo should pay for plastic bags,Bullying,4
+choice,<player>,"Ok guys.. It won’t hurt for all of us to be more kind with our words, can we not get personal with Kenzo? ",Upstanding,5
+,,,,
+Scene ,3,,,
+character,Curt,"Yea, a lot of countries overseas enforce this payment rule and I think it works to get people to bring their own bags",,
+character,Kenzo,Yeah I agree,,
+character,Paulina,"Come on, tell us something new Kenzo ha, stop ****ing around",,
+character,Curt,"Haha leave him alone, come on, he’s gonna start complaining to our teacher soon",,
+character,Paulina,"Yeah, what a wimp",,
+character,Curt,"SO, in my humble opinion, I am supportive of the payment rule for plastic bags, I think if such things are not enforced, people will not see a need to change the way they are living",,
+character,Kenzo,"Yup, I agree and we can hope that it becomes a habit that grows on everyone…",,
+character,Paulina,"Duh, I don’t need you to tell me you agree with everything kenzoboy. Tell me something I don’t know.",,
+choice,<player>,"Kenzo that idiot is just gonna agree with everything we say, forget it Paulina!",Bullying,END
+choice,<player>,"Paulina, if you’re not gonna stop with the name-calling, I will let Ms Tan know that you aren’t helping the discussion at all",Upstanding,END
+choice,<player>,"Well, I think enforcing payment has its pros and cons – I’m not sure how well the supermarket enterprises will take this?",Ignoring,END
+,,,,
+Scene ,4,,,
+character,Curt,"HA, maybe he can’t even afford one",,
+character,Paulina,Whut. That’s just lame.,,
+character,Kenzo,Can we get back to our discussion?,,
+character,Paulina,Oh look who’s coming out of his hole now…….,,
+character,Curt,"Kenzo the wimp! Ha. Anyway I guess… I am supportive of the payment rule for plastic bags, I think if such things are not enforced, people will not see a need to change the way they are living",,
+character,Kenzo,"Yup, I agree and we can hope that it becomes a habit that grows on everyone… ",,
+character,Paulina,"Duh, I don’t need you to tell me you agree with everything kenzoboy. Tell me something I don’t know.",,
+choice,<player>,Ok we don’t have much time left. Let’s get back to discussing the question first and deal with Kenzo later.,Ignoring,END
+choice,<player>,"Ok guys, let’s not be overboard with our words to Kenzo..",Upstanding,END
+choice,<player>,"Yeah, that’s Kenzo squirming out of his little hole, trying to be heard…",Bullying,END
+,,,,
+Scene,5,,,
+character,Curt,"Allllllright, I will try. Come on, so what’s our take on plastic bags? We gotta have a stand.",,
+character,Paulina,"I don’t know.. I guess my take is that, there’s no harm in making people pay so this will discourage them from using plastic bags unnecessarily",,
+character,Kenzo,"Yup, so only those who really need the bag will pay for it.. I think that will help to save the environment in the near future ",,
+character,Paulina,Yes smartie pants ,,
+character,Curt,It may help to keep the cost of the plastic bags to 10 cents maybe? What does smarty pants think? ,,
+choice,<player>,"Ok guys, shush. Kenzo is just helping by sharing with us his opinions. ",Upstanding,END
+choice,<player>,"Ok moving on, so we are good with this stand? ",Ignoring,END
+choice,<player>,SMARTIE PANTS INDEED. Tell us more.,Bullying,END
+,,,,
+END,,,,
+Display text,,"The conversation continues and Kenzo manages to present the answers to the class, for the team. Kenzo ultimately finds a friend in Keith, while his peers grow to accept him for who he is, with Keith’s influence….",Upstanding,
+Display text,,"The conversation continues and Kenzo manages to present the answers to the class, for the team. Kenzo, as hurt as he may be feeling from the name-calling, continues to pretend that all is fine… ",Ignoring,
+Display text,,The conversation continues and time eventually runs out. The group fails to come up with anything to present to the class. The bullying continues frequently and Kenzo struggles to deal with his hurts….,Bullying,
+Display text,,The conversation continues and time eventually runs out. The group fails to come up with anything to present to the class. The bullying continues to surface from time to time and Kenzo continues to pretend that all is fine... ,<equal>,
